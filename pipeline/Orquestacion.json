@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Execute Pipeline1",
+				"name": "PipelineCsvParquet",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"policy": {
