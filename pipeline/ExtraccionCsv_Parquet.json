@@ -56,7 +56,7 @@
 						"referenceName": "ds_parquet",
 						"type": "DatasetReference",
 						"parameters": {
-							"nombre": "archivo"
+							"nombre": "archivo.parquet"
 						}
 					}
 				]
