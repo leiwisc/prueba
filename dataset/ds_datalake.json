@@ -1,0 +1,53 @@
+{
+	"name": "ds_datalake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_datalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "data_dummy_ventas.csv",
+				"folderPath": "archivos",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "venta_id",
+				"type": "String"
+			},
+			{
+				"name": "cliente_id",
+				"type": "String"
+			},
+			{
+				"name": "producto_id",
+				"type": "String"
+			},
+			{
+				"name": "cantidad",
+				"type": "String"
+			},
+			{
+				"name": "precio_unitario",
+				"type": "String"
+			},
+			{
+				"name": "total",
+				"type": "String"
+			},
+			{
+				"name": "fecha_venta",
+				"type": "String"
+			}
+		]
+	}
+}
